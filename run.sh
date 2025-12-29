@@ -12,7 +12,7 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-g++ --std=c++17 -o "output/$file_name" "$1"
+g++ --std=c++20 -o "output/$file_name" "$1"
 
 if [ $? -ne 0 ]; then
     echo "Compilation failed"
